@@ -1,0 +1,338 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive; 
+    background-color: #daf99c;
+  }
+  
+  main{
+    background-color: #daf99c;
+   }
+
+  /*- es necesaria esta parte mobil para luego darle el valor desktop y que queden uno al lado del otro-*/
+  
+  nav {
+    background-color: #8989e7;
+    color: white;
+    width: 100%;
+  }
+  
+  nav .mobile{
+    display:none ;/* p/ ocultar el desktop p/pc*/
+  }
+  
+  
+
+span.logo {
+    min-width: 250px;
+    min-height: 250px;
+   
+  }
+
+.logo{
+    font-size: 25px;
+   
+    color: #e72f4d ;
+}
+ 
+span{
+    background:#daf99c;
+    color: rgb(105, 99, 99);
+    font-size: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    object-fit: cover;
+    
+  }
+  
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px; 
+  }
+  
+  
+  nav a:hover{
+    color: black;
+    background-color: #00c3ff;
+}
+  /*----------para desktop-*/
+
+nav .desktop{
+    display: flex;
+    justify-content: space-between;/*para q se expanda a lo largo de la pantalla*/
+    align-items: center;
+    padding: 0 20px;
+}
+
+/*falta aplicar otro flex para q no aparexcan en filas sino en colum */
+nav .desktop .sec-1,
+nav .desktop .sec-2{
+    display: flex;
+}
+/*---termina nav y comienza el main----*/
+
+
+
+
+/*grid*/
+
+
+.container { 
+  max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.bk-1{
+    background-color: #ffc0cb!important;
+}
+.bk-2{
+    background-color: #ee82ee!important;
+}
+.bk-3{
+    background-color: #ef5972!important;
+}
+.bk-4{
+    background-color: #f015f0!important;
+}
+.bk-5{
+    background-color: #e9dcde!important;
+}
+.bk-6{
+    background-color: #220122!important;
+}
+.bk-7{
+    background-color: #f74865!important;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(300px auto);
+    grid-gap:2em;
+  }
+
+.grid-B{
+    position: relative;
+    width:100%;
+    border-radius: 20px;
+    margin-top: 50px;
+   
+}
+
+  
+
+.grid-box{
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  
+ .grid-box-1{
+    grid-column: 1/2;
+    grid-row:1/3 ;
+    
+  }
+  
+ .grid-box-2{
+    grid-column:2/3 ;
+    grid-row:1/2 ;
+    
+  }
+ .grid-box-3{
+    grid-column:3/4 ;
+    grid-row: 1/2;
+    
+  }
+ .grid-box-4{
+    grid-column: 2/3;
+    grid-row:2/3 ;
+   
+  }
+ .grid-box-5{
+    grid-column:3/4 ;
+    grid-row:2/4 ;
+    
+  }
+.grid-box-6{
+    grid-column:1/2 ;
+    grid-row:3/4 ;
+    
+  }
+.grid-box-7{
+    grid-column:2/3;
+    grid-row:3/4 ;
+    
+  }
+  
+  
+  .grid-box-1,
+  .grid-box-5{
+    padding: 270px 0;
+  }
+  
+  .grid-box-2,
+  .grid-box-3,
+  .grid-box-4,
+  .grid-box-6,
+  .grid-box-7{
+    padding: 120px 0;
+  }
+  
+/*---footer----*/
+
+h1{
+  font-size: 2.5rem;
+  color: #00c3ff;
+}
+h4{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #e72f4d;
+}
+p{
+  color: #1e3050;
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+h1,
+h4{
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contenido{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 39px;
+}
+
+.display-1{
+font-size: 3rem;
+font-weight: 700;
+}
+
+.w-60{
+  width: 70%;
+
+}
+
+.btn{
+  display: inline-block;
+  font-size: 15px ;
+  padding: 12px 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-dark{
+  background:#8989e7 ;
+}
+
+.pb-1{
+ padding-bottom: 100px;
+}
+.pb-2{
+  padding-bottom: 80px;
+}
+.pb-3{
+  padding-bottom: 20px;
+}
+
+.pb-3{
+  padding-bottom: 10px;
+}
+
+.pt-1{
+ padding-top: 100px;
+}
+
+.pt-2{
+   padding-top: 80px;
+}
+
+.pt-3{
+  padding-top: 20px;
+}
+
+.pt-4{
+  padding-top: 10px;
+}
+
+.mr-1{
+  margin-right: 15px;
+
+}
+/*--flex--*/
+
+.flex{
+  display: flex;
+}
+
+.flex-static{
+  display: flex;
+  gap: 20px;
+}
+
+.flex-box-1{
+  flex: 1;
+}
+
+.flex-box-2{
+  flex: 2;
+}
+
+.bk-green{
+  background: #daf99c;
+}
+
+.txt-large{
+ font-size: 20px;
+}
+
+.txt-small{
+  font-size: 18px;
+  text-align: center;
+} 
+
+.txt-light{
+  font-weight: 300 ;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+button{
+  margin-top: 20px;
+}
+
+.form-group{
+  margin-top: 50px;
+}
+
+label,
+input {
+  
+    display: table-cell;
+    margin-bottom: 10px;
+    color: #f015f0;
+}
+
+label{
+  padding-right: 20px;
+}
